@@ -1,0 +1,793 @@
+/* GENERAL ========================================== */
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto Mono", monospace;
+}
+
+hr {
+  border: #fff 1px solid;
+  width: 60px;
+  margin: 50px auto;
+  opacity: 0.3;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 200;
+  font-size: 1.6em;
+  line-height: 1.8em;
+}
+
+.img-50porcent {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.container {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title-section {
+  font-family: "Roboto Mono", monospace;
+  font-size: 6em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.title-section--s_big {
+  font-size: 10em;
+}
+
+.title-section--white {
+  color: #ebebeb;
+}
+
+.title-section--red {
+  color: #ba1818;
+}
+
+.title-section--black {
+  color: #000;
+}
+
+.title-section__contact {
+  position: relative;
+  top: 40vh;
+}
+.subtitle-section {
+  position: relative;
+  top: 45vh;
+}
+
+.btn {
+  display: inline-block;
+  background: #ba1818;
+  width: auto;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  margin: 0px auto;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  border: none;
+}
+
+.btn--episode {
+  display: inline-block;
+  background: transparent;
+  text-align: center;
+  border: #fff 2px solid;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #ba1818;
+}
+
+.btn--episode:hover {
+  background: #fff;
+  color: #ba1818;
+}
+
+.show-phone {
+  display: none;
+}
+
+.show-desk {
+  display: block;
+}
+
+/* HEADER NAV ========================================== */
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: #000 url("../images/mr-robot-bg01.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.nav {
+  padding: 0 20px;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  height: 100px;
+  background: #000;
+}
+.nav__logo {
+  width: 150px;
+  height: auto;
+}
+
+.nav__links {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav__links .link-items {
+  font-size: 1.4em;
+  letter-spacing: 0.2em;
+  display: inline-block;
+  margin: 0 20px;
+  justify-content: center;
+}
+
+.nav__links .link-items a {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  color: #ebebeb;
+  text-decoration: none;
+}
+
+.nav__links .link-items a:hover {
+  color: #ba1818;
+}
+
+/* MAIN ================================================ */
+
+.main {
+  padding: 100px 0px;
+  background: #ba1818;
+  text-align: center;
+  color: #fff;
+}
+
+.main p {
+  margin-bottom: 50px;
+}
+
+.main__video-intro {
+  position: relative;
+  padding-bottom: 56.25%; /* 16/9 ratio */
+  padding-top: 30px; /* IE6 workaround*/
+  height: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.main__video-intro iframe,
+.main__video-intro object,
+.main__video-intro embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ACTORS ============================================ */
+
+.actors {
+  padding: 100px 100px;
+  background: #000;
+  text-align: center;
+}
+
+.list-actors {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-actor {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.card-actor__image {
+  width: 100%;
+  height: auto;
+}
+
+.card-actor__character {
+  font-weight: 400;
+  font-size: 3em;
+  letter-spacing: 0.2em;
+  color: #ebebeb;
+  display: block;
+  padding: 20px 0px 10px 0px;
+}
+.card-actor__name {
+  font-weight: 300;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  color: #ba1818;
+  display: block;
+}
+
+.card-actor__btn {
+  font-weight: 300;
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  font-size: 3em;
+  background: #ba1818;
+  display: block;
+  color: #fff;
+  margin: 20px auto;
+  text-decoration: none;
+}
+
+.card-actor__btn:hover {
+  background: #fff;
+  color: #ba1818;
+}
+
+/* PRIZES ========================================== */
+
+.prizes {
+  width: 100%;
+  height: auto;
+  /*
+  background: #000 url("../images/mr-robot-bg02.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  */
+  background: #000 url("../images/noise.gif") repeat center center fixed;
+  padding: 100px 0 150px 0px;
+  text-align: center;
+}
+
+.prizes p {
+  color: #ebebeb;
+  padding: 20px 150px;
+}
+
+/* GALLERY ============================================ */
+.gallery {
+  padding: 100px 0px;
+  background: #000;
+  text-align: center;
+  color: #fff;
+}
+
+.gallery__list {
+  width: 100%;
+  height: 1000px;
+  padding: 0px 40px 0px 40px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(26, 1fr);
+
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.gallery__list img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.gallery__img {
+  margin: 0;
+}
+
+.gallery__img:hover {
+  opacity: 0.4;
+}
+
+.--gallery__img-1 {
+  grid-column: 1 / 9;
+  grid-row: 1 / 7;
+}
+
+.--gallery__img-2 {
+  grid-column: 9 / 13;
+  grid-row: 1 / 13;
+}
+
+.--gallery__img-3 {
+  grid-column: 1 / 5;
+  grid-row: 7 / 13;
+}
+
+.--gallery__img-4 {
+  grid-column: 5 / 9;
+  grid-row: 7 / 13;
+}
+
+.--gallery__img-5 {
+  grid-column: 1 / 5;
+  grid-row: 13 / 26;
+}
+
+.--gallery__img-6 {
+  grid-column: 5 / 13;
+  grid-row: 13 / 20;
+}
+
+.--gallery__img-7 {
+  grid-column: 5 / 9;
+  grid-row: 20 / 26;
+}
+
+.--gallery__img-8 {
+  grid-column: 9 / 13;
+  grid-row: 20 / 26;
+}
+
+/* NEWSLETTER ========================================== */
+
+.footer {
+  width: 100%;
+  height: 400px;
+  background: #000;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.footer p {
+  padding: 0px 40px;
+}
+
+.form {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form__input {
+  display: block;
+  background: #fff;
+  width: 100%;
+  height: 48px;
+  line-height: 50px;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  border: none;
+}
+
+.footer__coder {
+  width: 200px;
+  height: auto;
+  margin: 100px 0px 20px 0px;
+}
+
+/* SEASONS ========================================== */
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.video-wrapper {
+  border: 2px solid #000;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.season-bg {
+  width: 100%;
+  height: auto;
+  padding: 100px 0px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.season-bg--bg01 {
+  background: url("../images/mr-robot-bg03.jpg") no-repeat center center fixed;
+}
+
+.season-bg--bg02 {
+  background: url("../images/mr-robot-bg04.jpg") no-repeat center center fixed;
+}
+
+.season-bg--bg03 {
+  background: url("../images/mr-robot-bg05.jpg") no-repeat center center fixed;
+}
+
+.season-bg--bg04 {
+  background: url("../images/mr-robot-bg06.jpg") no-repeat center center fixed;
+}
+
+.season-bg--bg05 {
+  background: #000 url("../images/mr-robot-bg07.jpg") no-repeat center center fixed;
+}
+
+.season-bg--bg01,
+.season-bg--bg02,
+.season-bg--bg03,
+.season-bg--bg04,
+.season-bg--bg05 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+p.--white {
+  color: #fff;
+  background: #000;
+  display: inline;
+  padding: 10px 0px;
+}
+
+p.--black {
+  color: #000;
+  background: #fff;
+  font-weight: 300;
+  display: inline;
+  padding: 10px 0px;
+}
+
+p.--red {
+  color: #000;
+  background: #ba1818;
+  font-weight: 300;
+  display: inline;
+  padding: 10px 0px;
+}
+
+.title-episode {
+  display: block;
+  font-family: "Roboto Mono", monospace;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.nav-episode {
+  display: flex;
+  width: 295px;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.episode-position {
+  display: inline-block;
+  background: transparent;
+  width: auto;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-align: center;
+  border: #fff 2px solid;
+}
+
+/* CONTACT ========================================== */
+
+.contact {
+  display: flex;
+}
+
+.logo-fsociety {
+  width: 120px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.contact-bg--bg05 {
+  background: #000 url("../images/mr-robot-bg08.jpg") no-repeat center center fixed;
+}
+
+.contact__text {
+  width: 50%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.contact__form {
+  width: 50%;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.contact__form__input {
+  display: block;
+  background: transparent;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  margin: 20px auto;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  border: #fff 2px solid;
+  box-sizing: border-box;
+}
+
+.contact__form__input--area {
+  width: 100;
+  height: 200px;
+  padding: 10px 20px;
+}
+
+.btn--right {
+  margin: 0;
+}
+
+/* MEDIA QUERY TABLET ========================================== */
+@media (max-width: 850px) {
+  .container {
+    max-width: 650px;
+  }
+
+  .header {
+    height: 690px;
+    background-position: 50% 5%;
+    background-size: 200%;
+  }
+
+  .video-wrapper {
+    height: 600px;
+    top: 100px;
+  }
+
+  .main {
+    padding-top: 60px;
+  }
+
+  .actors {
+    padding: 60px 50px;
+  }
+
+  .card-actor__character {
+    font-size: 2.7em;
+  }
+
+  .card-actor__name {
+    font-size: 1.5em;
+  }
+
+  .prizes {
+    padding-top: 60px;
+  }
+
+  .footer {
+    padding-top: 60px;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .title-section__contact {
+    top: 200px;
+  }
+
+  .subtitle-section {
+    top: 230px;
+  }
+
+  .contact__text {
+    width: 30%;
+  }
+  .contact__form {
+    width: 70%;
+  }
+}
+
+/* MEDIA QUERY MOBILE ========================================== */
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
+
+  .btn--center {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .nav {
+    flex-direction: column;
+    padding: 30px 0px 20px 0px;
+    height: 80px;
+  }
+
+  .header {
+    height: 50vh;
+    background-position: 50% 20%;
+    background-size: 200%;
+  }
+
+  .main {
+    padding: 50px 0px;
+  }
+
+  .main p {
+    padding: 40px;
+  }
+
+  .actors {
+    padding: 50px 70px;
+  }
+
+  .card-actor {
+    padding: 0 15px 50px 0;
+  }
+
+  .prizes {
+    padding: 50px 0px;
+  }
+
+  .prizes p {
+    padding: 40px;
+  }
+
+  .title-section {
+    display: block;
+    text-align: center;
+    font-size: 3.5em;
+  }
+
+  .subtitle-section {
+    top: 180px;
+  }
+
+  .list-actors {
+    flex-direction: column;
+  }
+
+  .video-wrapper {
+    height: 340px;
+    top: 120px;
+  }
+  .season-bg {
+    padding-top: 70px;
+  }
+
+  .title-episode {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .nav-episode {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 40px;
+  }
+
+  .--gallery__img-1 {
+    grid-column: 1 / 7;
+    grid-row: 1 / 6;
+  }
+
+  .--gallery__img-2 {
+    grid-column: 7 / 13;
+    grid-row: 1 / 6;
+  }
+
+  .--gallery__img-3 {
+    grid-column: 1 / 13;
+    grid-row: 6 / 11;
+  }
+
+  .--gallery__img-4 {
+    grid-column: 1 / 7;
+    grid-row: 11 / 16;
+  }
+
+  .--gallery__img-5 {
+    grid-column: 7 / 13;
+    grid-row: 11 / 16;
+  }
+
+  .--gallery__img-6 {
+    grid-column: 1 / 13;
+    grid-row: 16 / 21;
+  }
+
+  .--gallery__img-7 {
+    grid-column: 1 / 7;
+    grid-row: 21 / 26;
+  }
+
+  .--gallery__img-8 {
+    grid-column: 7 / 13;
+    grid-row: 21 / 26;
+  }
+
+  .footer {
+    height: 500px;
+    padding-top: 50px;
+  }
+
+  .form {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .btn--newsletter {
+    margin-top: 20px;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact__form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact__text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .title-section__contact {
+    top: 180px;
+    font-size: 6.5em;
+  }
+
+  .show-phone {
+    display: block;
+    margin: 40px;
+    text-align: center;
+  }
+
+  .show-desk {
+    display: none;
+  }
+}
