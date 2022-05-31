@@ -3,6 +3,7 @@
 html {
   font-size: 62.5%;
   font-family: "Roboto Mono", monospace;
+  overflow-x: hidden;
 }
 
 hr {
@@ -36,6 +37,7 @@ strong {
 }
 
 .title-section {
+  display: block;
   font-family: "Roboto Mono", monospace;
   font-size: 6em;
   font-weight: 700;

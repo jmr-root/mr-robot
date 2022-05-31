@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Mr. Robot</title>
   </head>
   <body>
@@ -27,7 +28,7 @@
 
     <main class="main">
       <div class="container">
-        <h1 class="title-section title-section--black">SYNOPSIS</h1>
+        <h1 class="title-section title-section--black" data-aos="fade-right">SYNOPSIS</h1>
         <hr />
         <!-- Se que el HR no va con cierre, pero el VSC me lo cierra automaticamente :( -->
         <p>
@@ -37,7 +38,7 @@
           "fsociety".[8] The group aims to destroy all debt records by encrypting the financial data of E Corp, the largest conglomerate in
           the world.
         </p>
-        <div class="main__video-intro">
+        <div class="main__video-intro" data-aos="fade-up">
           <iframe
             src="https://www.youtube.com/embed/NcgfoRpWLTs"
             title="YouTube video player"
@@ -50,7 +51,7 @@
     </main>
     <section class="actors">
       <div class="container">
-        <span class="title-section title-section--white">ACTORS</span>
+        <span class="title-section title-section--white" data-aos="fade-right">ACTORS</span>
         <hr />
         <!-- Se que el HR no va con cierre, pero el VSC me lo cierra automaticamente :( -->
         <div class="list-actors">
@@ -58,28 +59,28 @@
             <img src="images/actor-elliot.jpg" alt="ELLIOT" class="card-actor__image" />
             <span class="card-actor__character">ELLIOT</span>
             <span class="card-actor__name">Rami Malek</span>
-            <a class="card-actor__btn" href="#"><span>+</span></a>
+            <a class="card-actor__btn" href="#" data-aos="zoom-in"><span>+</span></a>
           </div>
 
           <div class="card-actor">
             <img src="images/actor-darlene.jpg" alt="DARLENE" class="card-actor__image" />
             <span class="card-actor__character">DARLENE</span>
             <span class="card-actor__name">Carly Chaikin</span>
-            <a class="card-actor__btn" href="#"><span>+</span></a>
+            <a class="card-actor__btn" href="#" data-aos="zoom-in"><span>+</span></a>
           </div>
 
           <div class="card-actor">
             <img src="images/actor-mrrobot.jpg" alt="MR ROBOT" class="card-actor__image" />
             <span class="card-actor__character">MR. ROBOT</span>
             <span class="card-actor__name">Christian Slater</span>
-            <a class="card-actor__btn" href="#"><span>+</span></a>
+            <a class="card-actor__btn" href="#" data-aos="zoom-in"><span>+</span></a>
           </div>
         </div>
       </div>
     </section>
     <section class="gallery">
       <div class="container">
-        <span class="title-section title-section--white">GALLERY</span>
+        <span class="title-section title-section--white" data-aos="fade-right">GALLERY</span>
         <hr />
         <div class="gallery__list">
           <figure class="--gallery__img-1">
@@ -119,31 +120,41 @@
     </section>
     <section class="prizes">
       <div class="container">
-        <span class="title-section title-section--white">PRIZES</span>
+        <span class="title-section title-section--white" data-aos="fade-right">PRIZES</span>
         <hr />
         <!-- Se que el HR no va con cierre, pero el VSC me lo cierra automaticamente :( -->
-        <img src="images/golden-globe.png" class="img-40porcent" alt="Golden Globes" />
+        <img src="images/golden-globe.png" class="img-40porcent" alt="Golden Globes" data-aos="fade" />
         <p>
           Mr. Robot won out over the hit Game of Thrones in the <i>“Best Drama Series”</i> category. Mr. Robot, series created by Sam Esmail
           won the Golden Globes award after competing with titles like Narcos, Outlander, Game of Thrones and Empire. fits It should be
           noted that actor Christian Slater won another award for Mr. Robot at the Golden Globes, since he won the category
           <i>“Best Supporting Actor in a Series”</i>.
         </p>
-        <a href="https://www.goldenglobes.com/search?keywords=mr%20robot" class="btn" target="blank_"><span>VIEW MORE</span></a>
+        <a href="https://www.goldenglobes.com/search?keywords=mr%20robot" class="btn" target="blank_" data-aos="zoom-in"
+          ><span>VIEW MORE</span></a
+        >
       </div>
     </section>
     <footer class="footer">
       <div class="container">
-        <span class="title-section title-section--white">NEWSLETTER</span>
+        <span class="title-section title-section--white" data-aos="fade-right">NEWSLETTER</span>
         <hr />
         <!-- Se que el HR no va con cierre, pero el VSC me lo cierra automaticamente :( -->
         <p>Subscribe to our newsletter and receive all the news about the series.</p>
-        <form action="" class="form">
+        <form action="" class="form" data-aos="fade-up">
           <input type="text" class="form__input" placeholder=" Enter your email" />
           <button type="submit" class="btn btn--newsletter"><span>SUBSCRIBE</span></button>
         </form>
         <img src="images/coderhouse-logo.png" class="footer__coder" alt="CODER HOUSE" />
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+        easing: "ease-in-out",
+      });
+    </script>
   </body>
 </html>

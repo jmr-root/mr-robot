@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Mr. Robot</title>
   </head>
   <body>
@@ -24,8 +25,8 @@
         </ul>
       </nav>
       <div class="container">
-        <span class="title-section title-section--s_big title-section--white title-section__contact">Let's Talk</span>
-        <span class="title-episode subtitle-section"
+        <span class="title-section title-section--s_big title-section--white title-section__contact" data-aos="fade-left">Let's Talk</span>
+        <span class="title-episode subtitle-section" data-aos="fade-left" data-aos-delay="50"
           >Send us an email or start<br />
           a conversation with Mr. Robot</span
         >
@@ -36,9 +37,9 @@
         <div class="contact">
           <div class="contact__text">
             <p class="--white"></p>
-            <img src="../images/fsociety-logo.png" class="logo-fsociety" alt="FSOCIETY LOGO" />
+            <img src="../images/fsociety-logo.png" class="logo-fsociety" alt="FSOCIETY LOGO" data-aos="fade" />
           </div>
-          <div class="contact__form">
+          <div class="contact__form" data-aos="fade-up">
             <form action="">
               <input type="text" class="contact__form__input" placeholder=" Enter your name" />
               <input type="text" class="contact__form__input" placeholder=" Enter your email" />
@@ -52,16 +53,24 @@
 
     <footer class="footer">
       <div class="container">
-        <span class="title-section title-section--white">NEWSLETTER</span>
+        <span class="title-section title-section--white" data-aos="fade-right">NEWSLETTER</span>
         <hr />
         <!-- Se que el HR no va con cierre, pero el VSC me lo cierra automaticamente :( -->
         <p>Subscribe to our newsletter and receive all the news about the series.</p>
-        <form action="" class="form">
+        <form action="" class="form" data-aos="fade-up">
           <input type="text" class="form__input" placeholder=" Enter your email" />
           <button type="submit" class="btn btn--newsletter"><span>SUBSCRIBE</span></button>
         </form>
         <img src="../images/coderhouse-logo.png" class="footer__coder" alt="CODER HOUSE" />
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 500,
+        easing: "ease-in-out",
+      });
+    </script>
   </body>
 </html>
