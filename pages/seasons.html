@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,33 +14,51 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <div class="nav__logo">
-          <img src="../images/mr-robot-logo.svg" alt="MR. ROBOT" />
-        </div>
-        <ul class="nav__links">
-          <li class="link-items"><a href="../index.html">HOME</a></li>
-          <li class="link-items"><a href="seasons.html">SEASSONS</a></li>
-          <li class="link-items"><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
       <div class="video-wrapper">
         <video playsinline autoplay muted loop>
           <source src="../images/video-bg.mp4" type="video/mp4" />
         </video>
       </div>
+      <nav class="navbar navbar-expand-lg navbar-black bg-black fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../images/mr-robot-logo.svg" alt="MR. ROBOT" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <ul class="nav__links">
+                <li class="navbar link-items"><a href="../index.html">HOME</a></li>
+                <li class="navbar link-items"><a href="seasons.html">SEASONS</a></li>
+                <li class="navbar link-items"><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-    <section class="season-bg season-bg--bg01">
+
+    <div class="container-fluid season-bg season-bg--bg01">
       <div class="container">
-        <span class="title-section title-section--s_big title-section--white" data-aos="fade-left">SEASON 01</span>
-        <span class="title-episode" data-aos="fade-left" data-aos-delay="50">Episode 01 __ HelloFriend</span>
-        <div class="show-phone">
+        <span class="display-1 text-color-white font-weight-700 letspac d-block" data-aos="fade-left">SEASON 01</span>
+        <span class="display-6 text-color-white font-weight-700 letspac d-block mb-5" data-aos="fade-left" data-aos-delay="50"
+          >Episode 01 __ HelloFriend</span
+        >
+        <div class="d-lg-none text-center">
           <p class="--white">
             Socially inept Elliot Alderson works at cyber security company Allsafe. At night, he hacks social media, personal information,
             and bank records, including those of his co-workers, therapist, and a drug dealer...
           </p>
         </div>
-        <div class="show-desk">
+        <div class="d-none d-lg-block">
           <p class="--white">
             Socially inept Elliot Alderson works at cyber security company Allsafe. At night, he hacks social media, personal information,
             and bank records, including those of his co-workers, therapist, and a drug dealer. Elliot stops a DDoS attack against Allsafe's
@@ -61,19 +79,21 @@
           </li>
         </ul>
       </div>
-    </section>
+    </div>
 
-    <section class="season-bg season-bg--bg02">
+    <div class="container-fluid season-bg season-bg--bg02">
       <div class="container">
-        <span class="title-section title-section--s_big title-section--white" data-aos="fade-left">SEASON 02</span>
-        <span class="title-episode" data-aos="fade-left" data-aos-delay="50">Episode 01 __ Unm4sk</span>
-        <div class="show-phone">
+        <span class="display-1 text-color-white font-weight-700 letspac d-block" data-aos="fade-left">SEASON 02</span>
+        <span class="display-6 text-color-white font-weight-700 letspac d-block mb-5" data-aos="fade-left" data-aos-delay="50"
+          >Episode 01 __ Unm4sk</span
+        >
+        <div class="d-lg-none text-center">
           <p class="--red">
             A brief flashback shows that Tyrell recorded an fsociety video the night he visited Elliot. One month later, Elliot has gone off
             the grid...
           </p>
         </div>
-        <div class="show-desk">
+        <div class="d-none d-lg-block">
           <p class="--red">
             A brief flashback shows that Tyrell recorded an fsociety video the night he visited Elliot. One month later, Elliot has gone off
             the grid, living with his mother and maintaining a repetitive routine in an attempt to weaken the influence of Mr. Robot, who
@@ -94,20 +114,22 @@
           </li>
         </ul>
       </div>
-    </section>
+    </div>
 
-    <section class="season-bg season-bg--bg03">
+    <div class="container-fluid season-bg season-bg--bg03">
       <div class="container">
-        <span class="title-section title-section--s_big title-section--white" data-aos="fade-left">SEASON 03</span>
-        <span class="title-episode" data-aos="fade-left" data-aos-delay="50">Episode 01 __ Power-saver-mode</span>
-        <div class="show-phone">
+        <span class="display-1 text-color-white font-weight-700 letspac d-block" data-aos="fade-left">SEASON 03</span>
+        <span class="display-6 text-color-white font-weight-700 letspac d-block mb-5" data-aos="fade-left" data-aos-delay="50"
+          >Episode 01 __ Power-saver-mode</span
+        >
+        <div class="d-lg-none text-center">
           <p class="--black">
             Zhang intends for Elliot to die once his work for the Dark Army is complete. In a panic that Elliot might die, Tyrell calls used
             car salesman and Dark Army agent Irving...
           </p>
         </div>
 
-        <div class="show-desk">
+        <div class="d-none d-lg-block">
           <p class="--black">
             Zhang intends for Elliot to die once his work for the Dark Army is complete. In a panic that Elliot might die, Tyrell calls used
             car salesman and Dark Army agent Irving. Elliot wakes up a week later in a room with Angela. He finds the firmware hack building
@@ -121,7 +143,7 @@
         </div>
         <ul class="nav-episode">
           <li>
-            <a class="btn btn--episode" href="#" data-aos="zoom-in"> <span>&#8249;</span></a>
+            <a class="btn btn--episode" href="#" data-aos="zoom-in"> <span>&#8249;</span> </a>
           </li>
           <li class="episode-position" data-aos="fade-up">01 / 12</li>
           <li>
@@ -129,19 +151,21 @@
           </li>
         </ul>
       </div>
-    </section>
+    </div>
 
-    <section class="season-bg season-bg--bg04">
+    <div class="container-fluid season-bg season-bg--bg04">
       <div class="container">
-        <span class="title-section title-section--s_big title-section--white" data-aos="fade-left">SEASON 04</span>
-        <span class="title-episode" data-aos="fade-left" data-aos-delay="50">Episode 01 __ Unauthorized</span>
-        <div class="show-phone">
+        <span class="display-1 text-color-white font-weight-700 letspac d-block" data-aos="fade-left">SEASON 04</span>
+        <span class="display-6 text-color-white font-weight-700 letspac d-block mb-5" data-aos="fade-left" data-aos-delay="50"
+          >Episode 01 __ Unauthorized</span
+        >
+        <div class="d-lg-none text-center">
           <p class="--white">
             The season picks up from the previous season with Angela's conversation with Price. Angela demands revenge against Whiterose,
             but Price tries and fails to talk her out of it.
           </p>
         </div>
-        <div class="show-desk">
+        <div class="d-none d-lg-block">
           <p class="--white">
             The season picks up from the previous season with Angela's conversation with Price. Angela demands revenge against Whiterose,
             but Price tries and fails to talk her out of it. While he walks away, Dark Army agents show up and kill Angela. Whiterose gives
@@ -166,22 +190,24 @@
           </li>
         </ul>
       </div>
-    </section>
+    </div>
 
-    <footer class="footer">
+    <footer class="container-fluid footer">
       <div class="container">
-        <span class="title-section title-section--white" data-aos="fade-right">NEWSLETTER</span>
+        <div class="row">
+          <span class="display-4 text-color-white font-weight-700 letspac" data-aos="fade-right">NEWSLETTER</span>
+        </div>
         <hr />
-        <!-- Se que el HR no va con cierre, pero el VSC me lo cierra automaticamente :( -->
-        <p>Subscribe to our newsletter and receive all the news about the series.</p>
+        <p mt-5 mb-5>Subscribe to our newsletter and receive all the news about the series.</p>
         <form action="" class="form" data-aos="fade-up">
           <input type="text" class="form__input" placeholder=" Enter your email" />
           <button type="submit" class="btn btn--newsletter"><span>SUBSCRIBE</span></button>
         </form>
-        <img src="../images/coderhouse-logo.png" class="footer__coder" alt="CODER HOUSE" />
+        <img src="../images/coderhouse-logo.png" class="img-fluid" alt="CODER HOUSE" />
       </div>
     </footer>
 
+    <script src="js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,55 +13,75 @@
     <title>Mr. Robot</title>
   </head>
   <body>
-    <header class="header season-bg--bg05">
-      <nav class="nav">
-        <div class="nav__logo">
-          <img src="../images/mr-robot-logo.svg" alt="MR. ROBOT" />
+    <header class="header season-bg--bg05 header--center">
+      <nav class="navbar navbar-expand-lg navbar-black bg-black fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../images/mr-robot-logo.svg" alt="MR. ROBOT" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <ul class="nav__links">
+                <li class="navbar link-items"><a href="../index.html">HOME</a></li>
+                <li class="navbar link-items"><a href="seasons.html">SEASONS</a></li>
+                <li class="navbar link-items"><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <ul class="nav__links">
-          <li class="link-items"><a href="../index.html">HOME</a></li>
-          <li class="link-items"><a href="seasons.html">SEASSONS</a></li>
-          <li class="link-items"><a href="contact.html">CONTACT</a></li>
-        </ul>
       </nav>
+
       <div class="container">
-        <span class="title-section title-section--s_big title-section--white title-section__contact" data-aos="fade-left">Let's Talk</span>
-        <span class="title-episode subtitle-section" data-aos="fade-left" data-aos-delay="50"
-          >Send us an email or start<br />
-          a conversation with Mr. Robot</span
-        >
+        <div class="row">
+          <span class="display-1 text-color-white font-weight-700 letspac contact-titulo" data-aos="fade-left">Let's Talk</span>
+        </div>
+        <div class="row">
+          <span class="display-6 text-color-white font-weight-700 letspac contact-subtitulo" data-aos="fade-left" data-aos-delay="50"
+            >Send us an email or start<br />
+            a conversation with Mr. Robot</span
+          >
+        </div>
       </div>
     </header>
-    <section class="season-bg contact-bg--bg05">
+    <div class="container'fluid season-bg contact-bg--bg05">
       <div class="container">
-        <div class="contact">
-          <div class="contact__text">
-            <p class="--white"></p>
+        <div class="row">
+          <div class="col-lg-6 col-sm-3 col-xs-12">
             <img src="../images/fsociety-logo.png" class="logo-fsociety" alt="FSOCIETY LOGO" data-aos="fade" />
           </div>
-          <div class="contact__form" data-aos="fade-up">
+          <div class="col-lg-6 col-sm-9 col-xs-12" data-aos="fade-up">
             <form action="">
               <input type="text" class="contact__form__input" placeholder=" Enter your name" />
               <input type="text" class="contact__form__input" placeholder=" Enter your email" />
               <textarea class="contact__form__input contact__form__input--area" rows="10" cols="50">Enter your message</textarea>
-              <button type="submit" class="btn btn--right btn--center"><span>SEND</span></button>
+              <button type="submit" class="btn btn--form"><span>SEND</span></button>
             </form>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <footer class="footer">
+    <footer class="container-fluid footer">
       <div class="container">
-        <span class="title-section title-section--white" data-aos="fade-right">NEWSLETTER</span>
+        <div class="row">
+          <span class="display-4 text-color-white font-weight-700 letspac" data-aos="fade-right">NEWSLETTER</span>
+        </div>
         <hr />
-        <!-- Se que el HR no va con cierre, pero el VSC me lo cierra automaticamente :( -->
-        <p>Subscribe to our newsletter and receive all the news about the series.</p>
+        <p mt-5 mb-5>Subscribe to our newsletter and receive all the news about the series.</p>
         <form action="" class="form" data-aos="fade-up">
           <input type="text" class="form__input" placeholder=" Enter your email" />
           <button type="submit" class="btn btn--newsletter"><span>SUBSCRIBE</span></button>
         </form>
-        <img src="../images/coderhouse-logo.png" class="footer__coder" alt="CODER HOUSE" />
+        <img src="../images/coderhouse-logo.png" class="img-fluid" alt="CODER HOUSE" />
       </div>
     </footer>
 

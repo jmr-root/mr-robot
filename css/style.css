@@ -1,90 +1,34 @@
-/* GENERAL ========================================== */
+/* GLOBAL ================================================ */
 
-html {
-  font-size: 62.5%;
-  font-family: "Roboto Mono", monospace;
+body {
+  letter-spacing: 0.2em;
+  background: #000;
   overflow-x: hidden;
 }
 
-hr {
-  border: #fff 1px solid;
-  width: 60px;
-  margin: 50px auto;
-  opacity: 0.3;
-}
-
-p {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 200;
-  font-size: 1.6em;
-  line-height: 1.8em;
-}
-
-.img-40porcent {
-  width: 40%;
-  height: auto;
-  margin: 0 auto;
-}
-
-strong {
-  font-weight: 600;
-}
-
-.container {
-  display: block;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.title-section {
-  display: block;
-  font-family: "Roboto Mono", monospace;
-  font-size: 6em;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-}
-
-.title-section--s_big {
-  font-size: 10em;
-}
-
-.title-section--white {
-  color: #ebebeb;
-}
-
-.title-section--red {
-  color: #ba1818;
-}
-
-.title-section--black {
-  color: #000;
-}
-
-.title-section__contact {
-  position: relative;
-  top: 40vh;
-}
-.subtitle-section {
-  position: relative;
-  top: 45vh;
-}
-
 .btn {
-  display: inline-block;
-  background: #ba1818;
-  width: auto;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 20px;
-  color: #fff;
-  margin: 0px auto;
-  font-size: 2em;
   font-weight: 300;
-  letter-spacing: 0.2em;
+  width: auto;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  background: #ba1818;
+  display: block;
+  color: #fff;
+  margin: 20px auto;
+  padding: 0 20px;
   text-decoration: none;
-  border: none;
   position: relative;
   transition: all 0.35s;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.btn:hover {
+  color: #ba1818;
 }
 
 .btn span {
@@ -99,40 +43,47 @@ strong {
   left: 0;
   width: 0;
   height: 100%;
+  color: #ba1818;
   background: #fff;
   transition: all 0.35s;
-}
-
-.btn:hover {
-  background: #fff;
-  color: #ba1818;
 }
 
 .btn:hover:after {
   width: 100%;
 }
 
-.btn--episode {
-  display: inline-block;
-  background: transparent;
-  text-align: center;
-  border: #fff 2px solid;
+.letspac {
+  letter-spacing: 0.2em;
 }
 
-.btn--episode:hover {
-  background: #fff;
+.text-color-red {
   color: #ba1818;
 }
 
-.show-phone {
-  display: none;
+.text-color-black {
+  color: black;
 }
 
-.show-desk {
-  display: block;
+.text-color-white {
+  color: #fff;
 }
 
-/* HEADER NAV ========================================== */
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+hr {
+  border: #fff 1px solid;
+  width: 60px;
+  margin: 50px auto;
+  opacity: 0.3;
+}
+
+/* HEADER ================================================ */
 
 .header {
   width: 100%;
@@ -143,29 +94,13 @@ strong {
   -o-background-size: cover;
   background-size: cover;
 }
-
-.nav {
-  padding: 0 20px;
+.header--center {
   display: flex;
-  width: 100%;
-  position: fixed;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  z-index: 1;
-  height: 100px;
-  background: #000;
-}
-.nav__logo {
-  width: 150px;
-  height: auto;
 }
 
-.nav__links {
-  display: inline-block;
-  padding: 0 20px;
-}
-
-.nav__links .link-items {
+.link-items {
   font-size: 1.4em;
   letter-spacing: 0.2em;
   display: inline-block;
@@ -173,7 +108,7 @@ strong {
   justify-content: center;
 }
 
-.nav__links .link-items a {
+.link-items a {
   position: relative;
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
@@ -185,7 +120,7 @@ strong {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-.nav__links .link-items a:after {
+.link-items a:after {
   content: "";
   position: absolute;
   background-color: #fff;
@@ -200,10 +135,10 @@ strong {
   -o-transition: 0.3s;
 }
 
-.nav__links .link-items a:hover {
+.link-items a:hover {
   color: #ba1818;
 }
-.nav__links .link-items a:hover:after {
+.link-items a:hover:after {
   width: 100%;
   left: 0%;
 }
@@ -215,10 +150,6 @@ strong {
   background: #ba1818;
   text-align: center;
   color: #fff;
-}
-
-.main p {
-  margin-bottom: 50px;
 }
 
 .main__video-intro {
@@ -243,96 +174,13 @@ strong {
 /* ACTORS ============================================ */
 
 .actors {
-  padding: 100px 100px;
+  padding: 100px 0px;
   background: #000;
   text-align: center;
 }
 
-.list-actors {
-  display: flex;
-  justify-content: space-around;
-}
-
-.card-actor {
-  padding: 0 15px;
-  text-align: center;
-}
-
-.card-actor__image {
-  width: 100%;
-  height: auto;
-}
-
-.card-actor__character {
-  font-weight: 400;
-  font-size: 3em;
-  letter-spacing: 0.2em;
-  color: #ebebeb;
-  display: block;
-  padding: 20px 0px 10px 0px;
-}
-.card-actor__name {
-  font-weight: 300;
-  font-size: 2em;
-  letter-spacing: 0.2em;
-  color: #ba1818;
-  display: block;
-}
-
-.card-actor__btn {
-  font-weight: 300;
+.btn--card {
   width: 50px;
-  height: 50px;
-  line-height: 45px;
-  font-size: 3em;
-  background: #ba1818;
-  display: block;
-  color: #fff;
-  margin: 20px auto;
-  text-decoration: none;
-  position: relative;
-  transition: all 0.35s;
-}
-
-.card-actor__btn span {
-  position: relative;
-  z-index: 2;
-}
-
-.card-actor__btn:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  color: #ba1818;
-  background: #fff;
-  transition: all 0.35s;
-}
-
-.card-actor__btn:hover {
-  color: #ba1818;
-}
-
-.card-actor__btn:hover:after {
-  width: 100%;
-}
-
-/* PRIZES ========================================== */
-
-.prizes {
-  width: 100%;
-  height: auto;
-
-  background: #000 url("../images/noise.gif") repeat center center fixed;
-  padding: 100px 0 150px 0px;
-  text-align: center;
-}
-
-.prizes p {
-  color: #ebebeb;
-  padding: 20px 150px;
 }
 
 /* GALLERY ============================================ */
@@ -445,19 +293,30 @@ strong {
   grid-row: 20 / 26;
 }
 
-/* NEWSLETTER ========================================== */
+/* PRIZES ========================================== */
+
+.prizes {
+  padding: 100px 0px;
+  background: #000 url("../images/noise.gif") repeat center center fixed;
+  padding: 100px 0 150px 0px;
+  text-align: center;
+}
+
+.prizes img {
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* FOOTER ========================================== */
 
 .footer {
   width: 100%;
-  height: 400px;
+  height: auto;
   background: #000;
   padding: 100px 0;
   text-align: center;
   color: #fff;
-}
-
-.footer p {
-  padding: 0px 40px;
 }
 
 .form {
@@ -474,14 +333,17 @@ strong {
   line-height: 50px;
   color: #fff;
   margin: 0 auto;
-  font-size: 2em;
   font-weight: 300;
   letter-spacing: 0.2em;
   text-decoration: none;
   border: none;
 }
 
-.footer__coder {
+.btn--newsletter {
+  margin: 0;
+}
+
+.footer img {
   width: 200px;
   height: auto;
   margin: 100px 0px 20px 0px;
@@ -510,7 +372,6 @@ video {
 
 .season-bg {
   width: 100%;
-  height: auto;
   padding: 100px 0px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -554,6 +415,7 @@ p.--white {
   background: #000;
   display: inline;
   padding: 10px 0px;
+  line-height: 1.8rem;
 }
 
 p.--black {
@@ -562,6 +424,7 @@ p.--black {
   font-weight: 300;
   display: inline;
   padding: 10px 0px;
+  line-height: 1.8rem;
 }
 
 p.--red {
@@ -570,16 +433,7 @@ p.--red {
   font-weight: 300;
   display: inline;
   padding: 10px 0px;
-}
-
-.title-episode {
-  display: block;
-  font-family: "Roboto Mono", monospace;
-  font-size: 3em;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  color: #fff;
-  margin-bottom: 20px;
+  line-height: 1.8rem;
 }
 
 .nav-episode {
@@ -587,6 +441,19 @@ p.--red {
   width: 295px;
   justify-content: space-between;
   padding: 20px 0px;
+}
+
+.btn--episode {
+  display: inline-block;
+  background: transparent;
+  text-align: center;
+  border: #fff 2px solid;
+  margin: 0;
+}
+
+.btn--episode:hover {
+  background: #fff;
+  color: #ba1818;
 }
 
 .episode-position {
@@ -597,7 +464,7 @@ p.--red {
   padding: 0 20px;
   line-height: 50px;
   color: #fff;
-  font-size: 2em;
+  font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.2em;
   text-decoration: none;
@@ -641,7 +508,7 @@ p.--red {
   line-height: 50px;
   color: #fff;
   margin: 20px auto;
-  font-size: 2em;
+  font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.2em;
   text-decoration: none;
@@ -655,150 +522,47 @@ p.--red {
   padding: 10px 20px;
 }
 
-.btn--right {
-  margin: 0;
+.btn--form {
+  margin-left: 0;
 }
 
-/* MEDIA QUERY TABLET ========================================== */
-@media (max-width: 850px) {
-  .container {
-    max-width: 650px;
-  }
-
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
   .header {
-    height: 690px;
-    background-position: 50% 5%;
+    height: 55vh;
+    background-position: 95% 15%;
     background-size: 200%;
   }
 
-  .video-wrapper {
-    height: 600px;
-    top: 100px;
+  .navbar-brand img {
+    width: 150px;
+    height: auto;
   }
 
-  .main {
-    padding-top: 60px;
+  .nav__links {
+    padding: 0;
+    display: flex;
+    justify-content: center;
   }
 
-  .actors {
-    padding: 60px 50px;
-  }
-
-  .card-actor__character {
-    font-size: 2.7em;
-  }
-
-  .card-actor__name {
-    font-size: 1.5em;
-  }
-
-  .prizes {
-    padding-top: 60px;
-  }
-
-  .footer {
-    padding-top: 60px;
-  }
-
-  .form {
-    width: 90%;
-  }
-
-  .title-section__contact {
-    top: 200px;
-  }
-
-  .subtitle-section {
-    top: 230px;
-  }
-
-  .contact__text {
-    width: 30%;
-  }
-  .contact__form {
-    width: 70%;
-  }
-}
-
-/* MEDIA QUERY MOBILE ========================================== */
-@media (max-width: 575px) {
-  .container {
-    width: 100%;
-  }
-
-  .btn--center {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .nav {
-    flex-direction: column;
-    padding: 30px 0px 20px 0px;
-    height: 80px;
-  }
-
-  .header {
-    height: 50vh;
-    background-position: 50% 20%;
-    background-size: 200%;
-  }
-
-  .main {
-    padding: 50px 0px;
-  }
-
-  .main p {
-    padding: 40px;
-  }
-
-  .actors {
-    padding: 50px 70px;
-  }
-
-  .card-actor {
-    padding: 0 15px 50px 0;
-  }
-
-  .prizes {
-    padding: 50px 0px;
-  }
-
-  .prizes p {
-    padding: 40px;
-  }
-
-  .title-section {
-    display: block;
-    text-align: center;
-    font-size: 3.5em;
-  }
-
-  .subtitle-section {
-    top: 180px;
-  }
-
-  .list-actors {
-    flex-direction: column;
+  .nav__links .link-items {
+    font-size: 1em;
   }
 
   .video-wrapper {
     height: 340px;
     top: 120px;
   }
-  .season-bg {
-    padding-top: 70px;
-  }
 
-  .title-episode {
-    font-size: 1.5em;
+  .season-bg p,
+  .season-bg span {
     text-align: center;
-    margin: 20px 0;
   }
 
   .nav-episode {
     width: 100%;
     box-sizing: border-box;
-    padding: 0px 40px;
+    padding: 40px 40px 0px 40px;
   }
 
   .--gallery__img-1 {
@@ -841,46 +605,65 @@ p.--red {
     grid-row: 21 / 26;
   }
 
-  .footer {
-    height: 500px;
-    padding-top: 50px;
-  }
-
   .form {
     width: 80%;
     flex-direction: column;
+  }
+
+  .btn--form {
+    margin: 0 auto;
   }
 
   .btn--newsletter {
     margin-top: 20px;
   }
 
-  .contact {
-    flex-direction: column;
-  }
-
-  .contact__form {
-    width: 90%;
+  .prizes img {
+    width: 60%;
+    height: auto;
     margin: 0 auto;
   }
 
-  .contact__text {
-    width: 100%;
+  .contact-titulo {
+    margin-top: 280px !important;
     text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
   }
 
-  .title-section__contact {
+  .contact-subtitulo {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 992px) {
+  .header {
+    height: 65vh;
+    background-position: 50% 10%;
+    background-size: 200%;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .video-wrapper {
+    height: 50vh;
     top: 180px;
-    font-size: 6.5em;
   }
 
-  .show-phone {
-    display: block;
-    margin: 40px;
+  .season-bg {
     text-align: center;
   }
 
-  .show-desk {
-    display: none;
+  .nav-episode {
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: calc(1.325rem + 0.2vw);
   }
 }
