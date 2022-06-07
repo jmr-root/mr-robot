@@ -13,7 +13,7 @@
     <title>Mr. Robot</title>
   </head>
   <body>
-    <header class="header header--index">
+    
       <nav class="navbar navbar-expand-lg navbar-black bg-black fixed-top justify-content-between">
         <a class="navbar-brand" href="#"><img src="images/mr-robot-logo.svg" alt="MR. ROBOT" /></a>
 
@@ -38,7 +38,7 @@
           </div>
         </div>
       </nav>
-      
+      <header class="header season-bg--bg00 header--index" >
     </header>
 
     <main class="container-fluid main">
@@ -102,8 +102,7 @@
                 </div>
               </div>
             </div>
-          </div>
-         
+          </div> 
       </div>
     </section>
     <section class="container-fluid gallery">
@@ -177,7 +176,7 @@
           <span class="display-4 text-color-white font-weight-700 letspac" data-aos="fade-right">NEWSLETTER</span>
         </div>
         <hr />
-        <p mt-5 mb-5>Subscribe to our newsletter and receive all the news about the series.</p>
+        <p class="mt-5 mb-5">Subscribe to our newsletter and receive all the news about the series.</p>
         <form action="" class="form" data-aos="fade-up">
           <input type="text" class="form__input" placeholder=" Enter your email" />
           <button type="submit" class="btn btn--newsletter"><span>SUBSCRIBE</span></button>
@@ -187,12 +186,23 @@
     </footer>
 
     <script src="js/bootstrap.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
         duration: 500,
         easing: "ease-in-out",
       });
+  </script>
+  <script type="text/javascript">
+     $(window).scroll(function(){
+      var scroll = $(this).scrollTop();
+      $('.header').css ({
+       'background-size' : 100 + scroll + '%' ,
+      'opacity' : 1 - $(window).scrollTop() / 250 
+      })
+     });
     </script>
   </body>
 </html>
