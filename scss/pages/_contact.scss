@@ -1,0 +1,84 @@
+/* CONTACT ========================================== */
+
+.contact {
+    display: flex;
+}
+
+.logo-fsociety {
+    width: 120px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.contact-bg {
+    background: #000 url("../images/mr-robot-bg07.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contact-bg2 {
+    background: #000 url("../images/mr-robot-bg08.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contact__text {
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.contact__form {
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.contact__form__input {
+    display: block;
+    background: transparent;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    margin: 20px auto;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    border: #fff 2px solid;
+    box-sizing: border-box;
+}
+
+.contact__form__input--area {
+    width: 100;
+    height: 200px;
+    padding: 10px 20px;
+}
+
+.btn--form {
+    margin-left: 0;
+    @media (max-width: 576px) {
+        margin: 0 auto;
+    }
+}
+
+.contact-titulo {
+    @media (max-width: 576px) {
+    margin-top: 270px !important;
+    text-align: center;
+    font-size: 2rem;
+    }
+}
+
+.contact-subtitulo {
+    @media (max-width: 576px) {
+    text-align: center;
+    font-size: 1rem;
+    }
+}

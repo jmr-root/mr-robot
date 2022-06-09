@@ -1,0 +1,48 @@
+.btn {
+    font-weight: 300;
+    width: auto;
+    line-height: 3rem;
+    font-size: 1.3rem;
+    background: $color-red;
+    display: block;
+    color: $color-white;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.35s;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    &:hover {
+        color: #ba1818;
+        &:after {
+            width: 100%;
+          }
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        color: #ba1818;
+        background: #fff;
+        transition: all 0.35s;
+    }
+    span {
+        position: relative;
+        z-index: 2;
+    }
+  }
+
+  .btn--newsletter {
+    margin: 0 auto;
+    @media (max-width: 576px) {
+        margin-top: 20px;
+    }
+  }

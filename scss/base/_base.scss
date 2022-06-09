@@ -1,0 +1,50 @@
+
+body {
+    font-family: "Roboto Mono", monospace;
+    letter-spacing: 0.2em;
+    background: #000;
+    overflow-x: hidden;
+}
+
+h2 {
+    @media (max-width: 992px) {
+    font-size: calc(1.325rem + 0.2vw);
+    }
+  }
+
+.letspac {
+    letter-spacing: 0.2em;
+}
+
+.text-color-red {
+    color: #ba1818;
+}
+
+  .text-color-black {
+    color: black;
+  }
+  
+  .text-color-white {
+    color: #fff;
+  }
+  
+  .font-weight-300 {
+    font-weight: 300;
+  }
+  
+  .font-weight-700 {
+    font-weight: 700;
+  }
+  
+  hr {
+    border: #fff 1px solid;
+    width: 60px;
+    margin: 50px auto;
+    opacity: 0.3;
+  }
+  
+
+  
+  
+  
+  

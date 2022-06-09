@@ -38,7 +38,7 @@
           </div>
         </div>
       </nav>
-      <header class="header season-bg--bg00 header--index" >
+      <header class="header bg--bg00 header--index" >
     </header>
 
     <main class="container-fluid main">
@@ -186,8 +186,6 @@
     </footer>
 
     <script src="js/bootstrap.js"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
@@ -195,14 +193,5 @@
         easing: "ease-in-out",
       });
   </script>
-  <script type="text/javascript">
-     $(window).scroll(function(){
-      var scroll = $(this).scrollTop();
-      $('.header').css ({
-       'background-size' : 100 + scroll + '%' ,
-      'opacity' : 1 - $(window).scrollTop() / 250 
-      })
-     });
-    </script>
   </body>
 </html>
