@@ -1,0 +1,7 @@
+1) Optimización de imagenes.
+2) Agregado META description.
+3) Agregado META keywords.
+4) Agregado META para redes sociales. 
+5) Agregado descriptivo de los ALT en imagenes. 
+6) Agregado de TITLES en videos.
+7) Cree una pagina de ERROR 404 ver archivo en pages/404.html.
