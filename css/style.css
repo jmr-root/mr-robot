@@ -1,10 +1,22 @@
+.--white, .--black, .--red {
+  font-weight: 300;
+  display: inline;
+  padding: 10px 0px;
+  line-height: 1.8rem; }
+
 body {
   font-family: "Roboto Mono", monospace;
   letter-spacing: 0.2em;
   background: #000;
   overflow-x: hidden; }
 
-@media (max-width: 992px) {
+hr {
+  border: #fff 1px solid;
+  width: 60px;
+  margin: 50px auto;
+  opacity: 0.3; }
+
+@media screen and (max-width: 992px) {
   h2 {
     font-size: calc(1.325rem + 0.2vw); } }
 
@@ -15,7 +27,7 @@ body {
   color: #ba1818; }
 
 .text-color-black {
-  color: black; }
+  color: #000; }
 
 .text-color-white {
   color: #fff; }
@@ -26,36 +38,35 @@ body {
 .font-weight-700 {
   font-weight: 700; }
 
-hr {
-  border: #fff 1px solid;
-  width: 60px;
-  margin: 50px auto;
-  opacity: 0.3; }
-
 /* HEADER ================================================ */
 .bg--bg00 {
   background: #000 url("../images/mr-robot-bg01.jpg") no-repeat fixed;
   background-position: center center; }
 
+.bg--bg404 {
+  background: #000 url("../images/mr-robot-bg404.jpg") no-repeat fixed;
+  background-position: center center; }
+
 .header {
   width: 100%;
   height: 100vh;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%; }
-  @media (max-width: 992px) {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover; }
+  @media screen and (max-width: 992px) {
     .header {
       height: 65vh;
       background-position: 50% 10%;
       background-size: 200%; } }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .header {
       height: 390px;
       background-position: 95% 15%;
       background-size: 200%; } }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .header--index {
     background-position: 50% 10%; } }
 
@@ -69,7 +80,7 @@ hr {
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .navbar-nav {
     flex-direction: row;
     justify-content: center; } }
@@ -81,11 +92,11 @@ hr {
   width: 160px;
   margin-left: 20px;
   margin-top: -10px; }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .navbar-brand {
       margin-left: 0; } }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .navbar-brand img {
     width: 140px;
     height: auto;
@@ -104,10 +115,10 @@ hr {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s; }
+    -webkit-transform: 0.3s;
+    -moz-transform: 0.3s;
+    -ms-transform: 0.3s;
+    -o-transform: 0.3s; }
     .link-items a:hover {
       color: #ba1818; }
       .link-items a:hover:after {
@@ -122,17 +133,17 @@ hr {
       left: 50%;
       bottom: -10px;
       transition: 0.3s;
-      -webkit-transition: 0.3s;
-      -moz-transition: 0.3s;
-      -ms-transition: 0.3s;
-      -o-transition: 0.3s; }
+      -webkit-transform: 0.3s;
+      -moz-transform: 0.3s;
+      -ms-transform: 0.3s;
+      -o-transform: 0.3s; }
   @media (max-width: 576px) {
     .link-items {
       font-size: 1em; } }
 
 .nav__links {
   margin: 0; }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .nav__links {
       padding: 0;
       display: flex;
@@ -156,7 +167,7 @@ hr {
   display: flex;
   width: 60%;
   margin: 0 auto; }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .form {
       width: 80%;
       flex-direction: column; } }
@@ -173,12 +184,6 @@ hr {
   letter-spacing: 0.2em;
   text-decoration: none;
   border: none; }
-
-.btn--newsletter {
-  margin: 0 auto; }
-  @media (max-width: 576px) {
-    .btn--newsletter {
-      margin-top: 20px; } }
 
 .btn {
   font-weight: 300;
@@ -219,7 +224,7 @@ hr {
 
 .btn--newsletter {
   margin: 0 auto; }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .btn--newsletter {
       margin-top: 20px; } }
 
@@ -299,10 +304,10 @@ hr {
       height: 100%;
       object-fit: cover;
       transition: all 400ms ease-out;
-      -webkit-transition: all 400ms ease-out;
-      -moz-transition: all 400ms ease-out;
-      -ms-transition: all 400ms ease-out;
-      -o-transition: all 400ms ease-out; }
+      -webkit-transform: all 400ms ease-out;
+      -moz-transform: all 400ms ease-out;
+      -ms-transform: all 400ms ease-out;
+      -o-transform: all 400ms ease-out; }
     .gallery__list figure .overlay {
       display: flex;
       position: absolute;
@@ -311,10 +316,10 @@ hr {
       height: 100%;
       background-color: rgba(186, 24, 24, 0.7);
       transition: all 400ms ease-out;
-      -webkit-transition: all 400ms ease-out;
-      -moz-transition: all 400ms ease-out;
-      -ms-transition: all 400ms ease-out;
-      -o-transition: all 400ms ease-out;
+      -webkit-transform: all 400ms ease-out;
+      -moz-transform: all 400ms ease-out;
+      -ms-transform: all 400ms ease-out;
+      -o-transform: all 400ms ease-out;
       opacity: 0;
       visibility: hidden;
       font-size: 4rem;
@@ -324,7 +329,7 @@ hr {
 .--gallery__img-1 {
   grid-column: 1 / 9;
   grid-row: 1 / 7; }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .--gallery__img-1 {
       grid-column: 1 / 7;
       grid-row: 1 / 6; } }
@@ -332,7 +337,7 @@ hr {
 .--gallery__img-2 {
   grid-column: 9 / 13;
   grid-row: 1 / 13; }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .--gallery__img-2 {
       grid-column: 7 / 13;
       grid-row: 1 / 6; } }
@@ -340,7 +345,7 @@ hr {
 .--gallery__img-3 {
   grid-column: 1 / 5;
   grid-row: 7 / 13; }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .--gallery__img-3 {
       grid-column: 1 / 13;
       grid-row: 6 / 11; } }
@@ -348,7 +353,7 @@ hr {
 .--gallery__img-4 {
   grid-column: 5 / 9;
   grid-row: 7 / 13; }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .--gallery__img-4 {
       grid-column: 1 / 7;
       grid-row: 11 / 16; } }
@@ -356,7 +361,7 @@ hr {
 .--gallery__img-5 {
   grid-column: 1 / 5;
   grid-row: 13 / 26; }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .--gallery__img-5 {
       grid-column: 7 / 13;
       grid-row: 11 / 16; } }
@@ -364,7 +369,7 @@ hr {
 .--gallery__img-6 {
   grid-column: 5 / 13;
   grid-row: 13 / 20; }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .--gallery__img-6 {
       grid-column: 1 / 13;
       grid-row: 16 / 21; } }
@@ -372,7 +377,7 @@ hr {
 .--gallery__img-7 {
   grid-column: 5 / 9;
   grid-row: 20 / 26; }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .--gallery__img-7 {
       grid-column: 1 / 7;
       grid-row: 21 / 26; } }
@@ -380,7 +385,7 @@ hr {
 .--gallery__img-8 {
   grid-column: 9 / 13;
   grid-row: 20 / 26; }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .--gallery__img-8 {
       grid-column: 7 / 13;
       grid-row: 21 / 26; } }
@@ -395,7 +400,7 @@ hr {
     width: 30%;
     height: auto;
     margin: 0 auto; }
-    @media (max-width: 576px) {
+    @media screen and (max-width: 576px) {
       .prizes img {
         width: 60%;
         height: auto;
@@ -418,11 +423,11 @@ video {
   display: flex;
   align-items: center;
   justify-content: center; }
-  @media (max-width: 992px) {
+  @media screen and (max-width: 992px) {
     .video-wrapper {
       height: 50vh;
       top: 180px; } }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .video-wrapper {
       height: 340px;
       top: 50px; } }
@@ -430,15 +435,16 @@ video {
 .season-bg {
   width: 100%;
   padding: 100px 0px;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  @media (max-width: 992px) {
+  -ms-background-size: cover;
+  -o-background-size: cover; }
+  @media screen and (max-width: 992px) {
     .season-bg {
       text-align: center; } }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .season-bg p, .season-bg span {
     text-align: center; } }
 
@@ -459,10 +465,11 @@ video {
 .season-bg--bg03,
 .season-bg--bg04,
 .season-bg--bg05 {
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -ms-background-size: cover;
+  -o-background-size: cover; }
 
 .nav-episode {
   display: flex;
@@ -470,10 +477,10 @@ video {
   justify-content: space-between;
   padding: 20px 0px;
   list-style: none; }
-  @media (max-width: 992px) {
+  @media screen and (max-width: 992px) {
     .nav-episode {
       margin: 0 auto; } }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .nav-episode {
       width: 100%;
       box-sizing: border-box;
@@ -506,26 +513,15 @@ video {
 
 .--white {
   color: #fff;
-  background: #000;
-  display: inline;
-  padding: 10px 0px;
-  line-height: 1.8rem; }
+  background: #000; }
 
 .--black {
   color: #000;
-  background: #fff;
-  font-weight: 300;
-  display: inline;
-  padding: 10px 0px;
-  line-height: 1.8rem; }
+  background: #fff; }
 
 .--red {
   color: #000;
-  background: #ba1818;
-  font-weight: 300;
-  display: inline;
-  padding: 10px 0px;
-  line-height: 1.8rem; }
+  background: #ba1818; }
 
 /* CONTACT ========================================== */
 .contact {
@@ -538,17 +534,19 @@ video {
 
 .contact-bg {
   background: #000 url("../images/mr-robot-bg07.jpg") no-repeat center center fixed;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -ms-background-size: cover;
+  -o-background-size: cover; }
 
 .contact-bg2 {
   background: #000 url("../images/mr-robot-bg08.jpg") no-repeat center center fixed;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -ms-background-size: cover;
+  -o-background-size: cover; }
 
 .contact__text {
   width: 50%;
@@ -583,17 +581,17 @@ video {
 
 .btn--form {
   margin-left: 0; }
-  @media (max-width: 576px) {
+  @media screen and (max-width: 576px) {
     .btn--form {
       margin: 0 auto; } }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .contact-titulo {
     margin-top: 270px !important;
     text-align: center;
     font-size: 2rem; } }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .contact-subtitulo {
     text-align: center;
     font-size: 1rem; } }

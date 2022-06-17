@@ -1,13 +1,20 @@
 
 body {
-    font-family: "Roboto Mono", monospace;
+    font-family: $fontPrimary;
     letter-spacing: 0.2em;
     background: #000;
     overflow-x: hidden;
 }
 
+hr {
+  border: #fff 1px solid;
+  width: 60px;
+  margin: 50px auto;
+  opacity: 0.3;
+}
+
 h2 {
-    @media (max-width: 992px) {
+  @include respond-to(tablet) {
     font-size: calc(1.325rem + 0.2vw);
     }
   }
@@ -17,15 +24,15 @@ h2 {
 }
 
 .text-color-red {
-    color: #ba1818;
+    color: $color-red;
 }
 
   .text-color-black {
-    color: black;
+    color: $color-black;
   }
   
   .text-color-white {
-    color: #fff;
+    color: $color-white;
   }
   
   .font-weight-300 {
@@ -36,12 +43,7 @@ h2 {
     font-weight: 700;
   }
   
-  hr {
-    border: #fff 1px solid;
-    width: 60px;
-    margin: 50px auto;
-    opacity: 0.3;
-  }
+ 
   
 
   

@@ -4,19 +4,21 @@
     background-position: center center;
 }
 
+.bg--bg404 {
+    background: #000 url("../images/mr-robot-bg404.jpg") no-repeat fixed;
+    background-position: center center;
+}
+
 .header {
     width: 100%;
     height: 100vh;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    @media (max-width: 992px) {
+    @include cover(cover);
+    @include respond-to(tablet) {
     height: 65vh;
     background-position: 50% 10%;
     background-size: 200%;
     }
-    @media (max-width: 576px) {
+    @include respond-to(mobile) {
         height: 390px;
         background-position: 95% 15%;
         background-size: 200%;
@@ -24,7 +26,7 @@
 }
 
 .header--index {
-    @media (max-width: 576px) {
+    @include respond-to(mobile) {
     background-position: 50% 10%;
     }
 }
@@ -36,9 +38,6 @@
 }
 
 
-
-
-
 /* NAV ================================================ */
 .navbar {
     padding-top: 1rem;
@@ -46,7 +45,7 @@
 }
 
 .navbar-nav {
-    @media (max-width: 992px) {
+    @include respond-to(tablet) {
     flex-direction: row;
     justify-content: center;
     }
@@ -59,13 +58,13 @@
     width: 160px;
     margin-left: 20px;
     margin-top: -10px;
-    @media (max-width: 576px) {
+    @include respond-to(mobile) {
         margin-left: 0;
     }
 }
 
 .navbar-brand img {
-    @media (max-width: 576px) {
+    @include respond-to(mobile) {
     width: 140px;
     height: auto;
     padding-left: 20px;
@@ -84,11 +83,7 @@
         font-weight: 300;
         color: $color-white;
         text-decoration: none;
-        transition: 0.3s;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
+        @include transition(0.3s);
         &:hover {
             color: $color-red;
             &:after {
@@ -104,11 +99,7 @@
             height: 1px;
             left: 50%;
             bottom: -10px;
-            transition: 0.3s;
-            -webkit-transition: 0.3s;
-            -moz-transition: 0.3s;
-            -ms-transition: 0.3s;
-            -o-transition: 0.3s;
+            @include transition(0.3s);
         }
     }
     @media (max-width: 576px) {
@@ -118,7 +109,7 @@
 
 .nav__links {
     margin: 0;
-    @media (max-width: 576px) {
+    @include respond-to(mobile) {
         padding: 0;
         display: flex;
         justify-content: center;
@@ -139,20 +130,20 @@
         width: 200px;
         height: auto;
         margin: 100px 0px 20px 0px;
-      }  
-  }
-  
-  .form {
+    }  
+}
+
+.form {
     display: flex;
     width: 60%;
     margin: 0 auto;
-    @media (max-width: 576px) {
+    @include respond-to(mobile) {
         width: 80%;
         flex-direction: column;
     }
-  }
-  
-  .form__input {
+}
+
+.form__input {
     display: block;
     background: #fff;
     width: 100%;
@@ -164,13 +155,4 @@
     letter-spacing: 0.2em;
     text-decoration: none;
     border: none;
-  }
-  
-  .btn--newsletter {
-    @media (max-width: 576px) {
-        margin-top: 20px;
-    }
-    margin: 0 auto;
-  }
-  
-  
+}

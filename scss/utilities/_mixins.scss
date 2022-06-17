@@ -1,0 +1,59 @@
+// EXTENDS
+%input {
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+%season {
+    font-weight: 300;
+    display: inline;
+    padding: 10px 0px;
+    line-height: 1.8rem;
+}
+
+// MAP
+$breakpoints: (
+    tablet: 992px,
+    mobile: 576px
+);
+
+// MIXINS
+@mixin respond-to($breakpoint) {
+    $value: map-get($breakpoints, $breakpoint);  
+    @media screen and (max-width: $value) {
+        @content;
+    }
+}
+
+@mixin transform($prop) {
+    transform: $prop;
+    -webkit-transform: $prop;
+    -moz-transform: $prop;
+    -ms-transform: $prop;
+    -o-transform: $prop;
+}
+
+@mixin transition($prop) {
+    transition: $prop;
+    -webkit-transform: $prop;
+    -moz-transform: $prop;
+    -ms-transform: $prop;
+    -o-transform: $prop;
+}
+
+@mixin cover($prop) {
+    background-size: $prop;
+    -webkit-background-size: $prop;
+    -moz-background-size: $prop;
+    -ms-background-size: $prop;
+    -o-background-size: $prop;
+}
+
+@mixin borderRadius($prop) {
+    border-radius: $prop;
+    -webkit-border-radius: $prop;
+    -moz-border-radius: $prop;
+    -ms-border-radius: $prop;
+    -o-border-radius: $prop;
+}

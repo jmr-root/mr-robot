@@ -16,11 +16,11 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (max-width: 992px) {
+    @include respond-to(tablet) {
         height: 50vh;
         top: 180px;
     }
-    @media (max-width: 576px) {
+    @include respond-to(mobile) {
         height: 340px;
         top: 50px;
     }
@@ -32,17 +32,14 @@ video {
 .season-bg {
     width: 100%;
     padding: 100px 0px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    @media (max-width: 992px) {
+    @include cover(cover);
+    @include respond-to(tablet) {
         text-align: center;
     }
 }
 
 .season-bg p, .season-bg span {
-    @media (max-width: 576px) {
+    @include respond-to(mobile) {
         text-align: center;
     }
 }
@@ -70,10 +67,7 @@ video {
 .season-bg--bg03,
 .season-bg--bg04,
 .season-bg--bg05 {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include cover(cover);
 }
 
 
@@ -83,10 +77,10 @@ video {
     justify-content: space-between;
     padding: 20px 0px;
     list-style: none;
-    @media (max-width: 992px) {
+    @include respond-to(tablet) {
         margin: 0 auto;
     }
-    @media (max-width: 576px) {
+    @include respond-to(mobile) {
         width: 100%;
         box-sizing: border-box;
         padding: 40px 40px 0px 40px;
@@ -121,34 +115,20 @@ video {
     border: #fff 2px solid;
 }
 
+.--white {
+    color: $color-white;
+    background: $color-black;
+    @extend %season;
+}
 
-    .--white {
-        color: #fff;
-        background: #000;
-        display: inline;
-        padding: 10px 0px;
-        line-height: 1.8rem;
-      }
+.--black {
+    color: $color-black;
+    background: $color-white;
+    @extend %season;
+}
 
-
-  
-
-    .--black {
-        color: #000;
-        background: #fff;
-        font-weight: 300;
-        display: inline;
-        padding: 10px 0px;
-        line-height: 1.8rem;
-      }
-
-  
-
-    .--red {
-        color: #000;
-        background: #ba1818;
-        font-weight: 300;
-        display: inline;
-        padding: 10px 0px;
-        line-height: 1.8rem;
-      }
+.--red {
+    color: $color-black;
+    background: $color-red;
+    @extend %season;
+}

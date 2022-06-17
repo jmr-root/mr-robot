@@ -12,18 +12,12 @@
 
 .contact-bg {
     background: #000 url("../images/mr-robot-bg07.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include cover(cover);
 }
 
 .contact-bg2 {
     background: #000 url("../images/mr-robot-bg08.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include cover(cover);
 }
 
 .contact__text {
@@ -63,13 +57,13 @@
 
 .btn--form {
     margin-left: 0;
-    @media (max-width: 576px) {
+    @include respond-to(mobile) {
         margin: 0 auto;
     }
 }
 
 .contact-titulo {
-    @media (max-width: 576px) {
+    @include respond-to(mobile) {
     margin-top: 270px !important;
     text-align: center;
     font-size: 2rem;
@@ -77,7 +71,7 @@
 }
 
 .contact-subtitulo {
-    @media (max-width: 576px) {
+    @include respond-to(mobile) {
     text-align: center;
     font-size: 1rem;
     }
