@@ -1,9 +1,8 @@
-
 body {
-    font-family: $fontPrimary;
-    letter-spacing: 0.2em;
-    background: #000;
-    overflow-x: hidden;
+  font-family: $fontPrimary;
+  letter-spacing: 0.2em;
+  background: #000;
+  overflow-x: hidden;
 }
 
 hr {
@@ -16,37 +15,56 @@ hr {
 h2 {
   @include respond-to(tablet) {
     font-size: calc(1.325rem + 0.2vw);
-    }
   }
+}
 
 .letspac {
-    letter-spacing: 0.2em;
+  letter-spacing: 0.2em;
 }
 
 .text-color-red {
-    color: $color-red;
+  color: $color-red;
 }
 
-  .text-color-black {
-    color: $color-black;
-  }
-  
-  .text-color-white {
-    color: $color-white;
-  }
-  
-  .font-weight-300 {
-    font-weight: 300;
-  }
-  
-  .font-weight-700 {
-    font-weight: 700;
-  }
-  
- 
-  
+.text-color-black {
+  color: $color-black;
+}
 
-  
-  
-  
-  
+.text-color-white {
+  color: $color-white;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $color-red;
+  border-left: #000 1px solid;
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background: $color-red;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: $color-red;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: #1f1f1f;
+}

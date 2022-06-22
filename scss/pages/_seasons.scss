@@ -1,134 +1,142 @@
 /* SEASONS ========================================== */
 
 video {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 .video-wrapper {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @include respond-to(tablet) {
-        height: 50vh;
-        top: 180px;
-    }
-    @include respond-to(mobile) {
-        height: 340px;
-        top: 50px;
-    }
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include respond-to(tablet) {
+    height: 50vh;
+    top: 180px;
+  }
+  @include respond-to(mobile) {
+    height: 340px;
+    top: 50px;
+  }
 }
 
-
-
+.season-quote {
+  position: absolute;
+  top: 230px;
+  z-index: 9;
+  text-align: center;
+  text-transform: uppercase;
+  @include respond-to(mobile) {
+    top: -80px;
+    padding: 0 20px;
+    font-size: 1.6rem !important;
+  }
+}
 
 .season-bg {
-    width: 100%;
-    padding: 100px 0px;
-    @include cover(cover);
-    @include respond-to(tablet) {
-        text-align: center;
-    }
+  width: 100%;
+  padding: 100px 0px;
+  @include cover(cover);
+  @include respond-to(tablet) {
+    text-align: center;
+  }
 }
 
-.season-bg p, .season-bg span {
-    @include respond-to(mobile) {
-        text-align: center;
-    }
+.season-bg p,
+.season-bg span {
+  @include respond-to(mobile) {
+    text-align: center;
+  }
 }
-
 
 .season-bg--bg01 {
-    background: url("../images/mr-robot-bg03.jpg") no-repeat center center fixed;
+  background: url("../images/mr-robot-bg03.jpg") no-repeat center center fixed;
 }
 
 .season-bg--bg02 {
-    background: url("../images/mr-robot-bg04.jpg") no-repeat center center fixed;
+  background: url("../images/mr-robot-bg04.jpg") no-repeat center center fixed;
 }
 
 .season-bg--bg03 {
-    background: url("../images/mr-robot-bg05.jpg") no-repeat center center fixed;
+  background: url("../images/mr-robot-bg05.jpg") no-repeat center center fixed;
 }
 
 .season-bg--bg04 {
-    background: url("../images/mr-robot-bg06.jpg") no-repeat center center fixed;
+  background: url("../images/mr-robot-bg06.jpg") no-repeat center center fixed;
 }
-
 
 .season-bg--bg01,
 .season-bg--bg02,
 .season-bg--bg03,
 .season-bg--bg04,
 .season-bg--bg05 {
-    @include cover(cover);
+  @include cover(cover);
 }
 
-
 .nav-episode {
-    display: flex;
-    width: 295px;
-    justify-content: space-between;
-    padding: 20px 0px;
-    list-style: none;
-    @include respond-to(tablet) {
-        margin: 0 auto;
-    }
-    @include respond-to(mobile) {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 40px 40px 0px 40px;
-    }
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  padding: 20px 0px;
+  list-style: none;
+  @include respond-to(tablet) {
+    margin: 0 auto;
+  }
+  @include respond-to(mobile) {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 40px 0px 40px;
+  }
 }
 
 .btn--episode {
-    display: inline-block;
-    background: transparent;
-    text-align: center;
-    border: #fff 2px solid;
-    margin: 0;
-    &:hover {
-        background: #fff;
-        color: #ba1818;
-    }
+  display: inline-block;
+  background: transparent;
+  text-align: center;
+  border: #fff 2px solid;
+  margin: 0;
+  &:hover {
+    background: #fff;
+    color: #ba1818;
+  }
 }
 
 .episode-position {
-    display: inline-block;
-    background: transparent;
-    width: auto;
-    height: 50px;
-    padding: 0 20px;
-    line-height: 50px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 300;
-    letter-spacing: 0.2em;
-    text-decoration: none;
-    text-align: center;
-    border: #fff 2px solid;
+  display: inline-block;
+  background: transparent;
+  width: auto;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-align: center;
+  border: #fff 2px solid;
 }
 
 .--white {
-    color: $color-white;
-    background: $color-black;
-    @extend %season;
+  color: $color-white;
+  background: $color-black;
+  @extend %season;
 }
 
 .--black {
-    color: $color-black;
-    background: $color-white;
-    @extend %season;
+  color: $color-black;
+  background: $color-white;
+  @extend %season;
 }
 
 .--red {
-    color: $color-black;
-    background: $color-red;
-    @extend %season;
+  color: $color-black;
+  background: $color-red;
+  @extend %season;
 }

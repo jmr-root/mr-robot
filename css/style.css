@@ -38,9 +38,30 @@ hr {
 .font-weight-700 {
   font-weight: 700; }
 
+body::-webkit-scrollbar {
+  width: 8px; }
+
+body::-webkit-scrollbar-thumb {
+  background: #ba1818;
+  border-left: #000 1px solid; }
+
+body::-webkit-scrollbar-thumb:active {
+  background: #ba1818; }
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #ba1818;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
+
+body::-webkit-scrollbar-track {
+  background: #1f1f1f; }
+
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: #1f1f1f; }
+
 /* HEADER ================================================ */
 .bg--bg00 {
-  background: #000 url("../images/mr-robot-bg01.jpg") no-repeat fixed;
+  background: #000 url("../images/mr-robot-bg01.gif") no-repeat fixed;
   background-position: center center; }
 
 .bg--bg404 {
@@ -106,7 +127,7 @@ hr {
   font-size: 1.1rem;
   letter-spacing: 0.2em;
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 13px;
   justify-content: center; }
   .link-items a {
     position: relative;
@@ -129,7 +150,7 @@ hr {
       position: absolute;
       background-color: #fff;
       width: 0%;
-      height: 1px;
+      height: 2px;
       left: 50%;
       bottom: -10px;
       transition: 0.3s;
@@ -228,6 +249,25 @@ hr {
     .btn--newsletter {
       margin-top: 20px; } }
 
+.modal-header {
+  background-color: transparent !important;
+  color: #fff;
+  border: none; }
+
+.modal-body {
+  background: #000;
+  color: #fff;
+  padding: 0; }
+
+.modal-content {
+  border: 0;
+  background-color: transparent !important; }
+
+.btn-close {
+  color: #fff !important;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  opacity: 0.8; }
+
 /* MAIN ================================================ */
 .main {
   padding: 100px 0px;
@@ -261,7 +301,49 @@ hr {
   text-align: center; }
 
 .card {
-  background: none; }
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: none;
+  text-decoration: none;
+  border: none;
+  padding: 0;
+  cursor: pointer; }
+  .card .btn--card2 {
+    position: absolute;
+    margin: 0;
+    width: 50px;
+    top: 0;
+    right: 0;
+    z-index: 999; }
+  .card .card-body {
+    background: #000;
+    position: relative;
+    z-index: 999;
+    width: 100%; }
+  .card:hover > img {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3); }
+  .card:hover > .btn--card2 {
+    transition: all 400ms ease-out;
+    -webkit-transform: all 400ms ease-out;
+    -moz-transform: all 400ms ease-out;
+    -ms-transform: all 400ms ease-out;
+    -o-transform: all 400ms ease-out;
+    background: #000; }
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 400ms ease-out;
+    -webkit-transform: all 400ms ease-out;
+    -moz-transform: all 400ms ease-out;
+    -ms-transform: all 400ms ease-out;
+    -o-transform: all 400ms ease-out; }
 
 .btn--card {
   width: 50px; }
@@ -432,6 +514,18 @@ video {
       height: 340px;
       top: 50px; } }
 
+.season-quote {
+  position: absolute;
+  top: 230px;
+  z-index: 9;
+  text-align: center;
+  text-transform: uppercase; }
+  @media screen and (max-width: 576px) {
+    .season-quote {
+      top: -80px;
+      padding: 0 20px;
+      font-size: 1.6rem !important; } }
+
 .season-bg {
   width: 100%;
   padding: 100px 0px;
@@ -445,7 +539,8 @@ video {
       text-align: center; } }
 
 @media screen and (max-width: 576px) {
-  .season-bg p, .season-bg span {
+  .season-bg p,
+  .season-bg span {
     text-align: center; } }
 
 .season-bg--bg01 {
@@ -473,7 +568,7 @@ video {
 
 .nav-episode {
   display: flex;
-  width: 295px;
+  width: 250px;
   justify-content: space-between;
   padding: 20px 0px;
   list-style: none; }
@@ -539,6 +634,14 @@ video {
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover; }
+  @media screen and (max-width: 576px) {
+    .contact-bg {
+      background-position: 95% -5%;
+      background-size: 210% !important; } }
+  @media screen and (max-width: 992px) {
+    .contact-bg {
+      background-position: 95% -5%;
+      background-size: 210% !important; } }
 
 .contact-bg2 {
   background: #000 url("../images/mr-robot-bg08.jpg") no-repeat center center fixed;
@@ -585,12 +688,21 @@ video {
     .btn--form {
       margin: 0 auto; } }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .contact-titulo {
-    margin-top: 270px !important;
+    margin-top: 450px !important;
+    text-align: center;
+    font-size: 3rem; } }
+  @media screen and (max-width: 992px) and (max-width: 576px) {
+    .contact-titulo {
+      margin-top: 230px !important;
+      text-align: center;
+      font-size: 2rem; } }
+
+@media screen and (max-width: 992px) {
+  .contact-subtitulo {
     text-align: center;
     font-size: 2rem; } }
-
 @media screen and (max-width: 576px) {
   .contact-subtitulo {
     text-align: center;

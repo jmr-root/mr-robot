@@ -1,78 +1,95 @@
 /* CONTACT ========================================== */
 
 .contact {
-    display: flex;
+  display: flex;
 }
 
 .logo-fsociety {
-    width: 120px;
-    height: auto;
-    margin-top: 10px;
+  width: 120px;
+  height: auto;
+  margin-top: 10px;
 }
 
 .contact-bg {
-    background: #000 url("../images/mr-robot-bg07.jpg") no-repeat center center fixed;
-    @include cover(cover);
+  background: #000 url("../images/mr-robot-bg07.jpg") no-repeat center center fixed;
+  @include cover(cover);
+  @include respond-to(mobile) {
+    background-position: 95% -5%;
+    background-size: 210% !important;
+  }
+  @include respond-to(tablet) {
+    background-position: 95% -5%;
+    background-size: 210% !important;
+  }
 }
 
 .contact-bg2 {
-    background: #000 url("../images/mr-robot-bg08.jpg") no-repeat center center fixed;
-    @include cover(cover);
+  background: #000 url("../images/mr-robot-bg08.jpg") no-repeat center center fixed;
+  @include cover(cover);
 }
 
 .contact__text {
-    width: 50%;
-    padding: 15px;
-    box-sizing: border-box;
+  width: 50%;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .contact__form {
-    width: 50%;
-    padding: 15px;
-    box-sizing: border-box;
-    display: flex;
+  width: 50%;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
 }
 
 .contact__form__input {
-    display: block;
-    background: transparent;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    color: #fff;
-    margin: 20px auto;
-    font-size: 1rem;
-    font-weight: 300;
-    letter-spacing: 0.2em;
-    text-decoration: none;
-    border: #fff 2px solid;
-    box-sizing: border-box;
+  display: block;
+  background: transparent;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  margin: 20px auto;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  border: #fff 2px solid;
+  box-sizing: border-box;
 }
 
 .contact__form__input--area {
-    width: 100;
-    height: 200px;
-    padding: 10px 20px;
+  width: 100;
+  height: 200px;
+  padding: 10px 20px;
 }
 
 .btn--form {
-    margin-left: 0;
-    @include respond-to(mobile) {
-        margin: 0 auto;
-    }
+  margin-left: 0;
+  @include respond-to(mobile) {
+    margin: 0 auto;
+  }
 }
 
 .contact-titulo {
-    @include respond-to(mobile) {
-    margin-top: 270px !important;
+  @include respond-to(tablet) {
+    margin-top: 450px !important;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    @include respond-to(mobile) {
+      margin-top: 230px !important;
+      text-align: center;
+      font-size: 2rem;
     }
+  }
 }
 
 .contact-subtitulo {
-    @include respond-to(mobile) {
+  @include respond-to(tablet) {
+    text-align: center;
+    font-size: 2rem;
+  }
+  @include respond-to(mobile) {
     text-align: center;
     font-size: 1rem;
-    }
+  }
 }

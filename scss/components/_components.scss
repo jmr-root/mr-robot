@@ -1,44 +1,67 @@
 .btn {
-    font-weight: 300;
-    width: auto;
-    line-height: 3rem;
-    font-size: 1.3rem;
-    background: $color-red;
-    display: block;
-    color: $color-white;
-    margin: 20px auto;
-    padding: 0 20px;
-    text-decoration: none;
-    position: relative;
-    transition: all 0.35s;
-    border: none;
-    @include borderRadius(0);
-    &:hover {
-        color: #ba1818;
-        &:after {
-            width: 100%;
-        }
-    }
+  font-weight: 300;
+  width: auto;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  background: $color-red;
+  display: block;
+  color: $color-white;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.35s;
+  border: none;
+  @include borderRadius(0);
+  &:hover {
+    color: #ba1818;
     &:after {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        color: #ba1818;
-        background: #fff;
-        transition: all 0.35s;
+      width: 100%;
     }
-    span {
-        position: relative;
-        z-index: 2;
-    }
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #ba1818;
+    background: #fff;
+    transition: all 0.35s;
+  }
+  span {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .btn--newsletter {
-    margin: 0 auto;
-    @include respond-to(mobile) {
-        margin-top: 20px;
-    }
+  margin: 0 auto;
+  @include respond-to(mobile) {
+    margin-top: 20px;
+  }
+}
+.modal-header {
+  background-color: transparent !important;
+  color: $color-white;
+  border: none;
+}
+.modal-body {
+  background: $color-black;
+  color: $color-white;
+  padding: 0;
+}
+
+.modal-content {
+  border: 0;
+  background-color: transparent !important;
+}
+
+.btn-close {
+  color: $color-white !important;
+  background: transparent
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
+    center/1em auto no-repeat;
+  opacity: 0.8;
 }

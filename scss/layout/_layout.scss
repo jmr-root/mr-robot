@@ -1,158 +1,157 @@
 /* HEADER ================================================ */
 .bg--bg00 {
-    background: #000 url("../images/mr-robot-bg01.jpg") no-repeat fixed;
-    background-position: center center;
+  background: #000 url("../images/mr-robot-bg01.gif") no-repeat fixed;
+  background-position: center center;
 }
 
 .bg--bg404 {
-    background: #000 url("../images/mr-robot-bg404.jpg") no-repeat fixed;
-    background-position: center center;
+  background: #000 url("../images/mr-robot-bg404.jpg") no-repeat fixed;
+  background-position: center center;
 }
 
 .header {
-    width: 100%;
-    height: 100vh;
-    @include cover(cover);
-    @include respond-to(tablet) {
+  width: 100%;
+  height: 100vh;
+  @include cover(cover);
+  @include respond-to(tablet) {
     height: 65vh;
     background-position: 50% 10%;
     background-size: 200%;
-    }
-    @include respond-to(mobile) {
-        height: 390px;
-        background-position: 95% 15%;
-        background-size: 200%;
-    }
+  }
+  @include respond-to(mobile) {
+    height: 390px;
+    background-position: 95% 15%;
+    background-size: 200%;
+  }
 }
 
 .header--index {
-    @include respond-to(mobile) {
+  @include respond-to(mobile) {
     background-position: 50% 10%;
-    }
+  }
 }
 
 .header--center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* NAV ================================================ */
 .navbar {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .navbar-nav {
-    @include respond-to(tablet) {
+  @include respond-to(tablet) {
     flex-direction: row;
     justify-content: center;
-    }
+  }
 }
 .navbar-black .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navbar-brand {
-    width: 160px;
-    margin-left: 20px;
-    margin-top: -10px;
-    @include respond-to(mobile) {
-        margin-left: 0;
-    }
+  width: 160px;
+  margin-left: 20px;
+  margin-top: -10px;
+  @include respond-to(mobile) {
+    margin-left: 0;
+  }
 }
 
 .navbar-brand img {
-    @include respond-to(mobile) {
+  @include respond-to(mobile) {
     width: 140px;
     height: auto;
     padding-left: 20px;
-    }
+  }
 }
 
 .link-items {
-    font-size: 1.1rem;
-    letter-spacing: 0.2em;
-    display: inline-block;
-    margin: 0 20px;
-    justify-content: center;
-    a {
-        position: relative;
-        font-family:$fontPrimary;
-        font-weight: 300;
-        color: $color-white;
-        text-decoration: none;
-        @include transition(0.3s);
-        &:hover {
-            color: $color-red;
-            &:after {
-                width: 100%;
-                left: 0%;
-            }
-        }
-        &:after {
-            content: "";
-            position: absolute;
-            background-color: $color-white;
-            width: 0%;
-            height: 1px;
-            left: 50%;
-            bottom: -10px;
-            @include transition(0.3s);
-        }
+  font-size: 1.1rem;
+  letter-spacing: 0.2em;
+  display: inline-block;
+  margin: 0 13px;
+  justify-content: center;
+  a {
+    position: relative;
+    font-family: $fontPrimary;
+    font-weight: 300;
+    color: $color-white;
+    text-decoration: none;
+    @include transition(0.3s);
+    &:hover {
+      color: $color-red;
+      &:after {
+        width: 100%;
+        left: 0%;
+      }
     }
-    @media (max-width: 576px) {
-        font-size: 1em;
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: $color-white;
+      width: 0%;
+      height: 2px;
+      left: 50%;
+      bottom: -10px;
+      @include transition(0.3s);
     }
+  }
+  @media (max-width: 576px) {
+    font-size: 1em;
+  }
 }
 
 .nav__links {
-    margin: 0;
-    @include respond-to(mobile) {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        margin: 10px 0px 0px 0px;   
-    } 
+  margin: 0;
+  @include respond-to(mobile) {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+  }
 }
 
 /* FOOTER ========================================== */
 
 .footer {
-    width: 100%;
+  width: 100%;
+  height: auto;
+  background: $color-black;
+  padding: 100px 0;
+  text-align: center;
+  color: $color-white;
+  img {
+    width: 200px;
     height: auto;
-    background: $color-black;
-    padding: 100px 0;
-    text-align: center;
-    color: $color-white;
-    img {
-        width: 200px;
-        height: auto;
-        margin: 100px 0px 20px 0px;
-    }  
+    margin: 100px 0px 20px 0px;
+  }
 }
 
 .form {
-    display: flex;
-    width: 60%;
-    margin: 0 auto;
-    @include respond-to(mobile) {
-        width: 80%;
-        flex-direction: column;
-    }
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  @include respond-to(mobile) {
+    width: 80%;
+    flex-direction: column;
+  }
 }
 
 .form__input {
-    display: block;
-    background: #fff;
-    width: 100%;
-    height: 48px;
-    line-height: 50px;
-    color: #fff;
-    margin: 0 auto;
-    font-weight: 300;
-    letter-spacing: 0.2em;
-    text-decoration: none;
-    border: none;
+  display: block;
+  background: #fff;
+  width: 100%;
+  height: 48px;
+  line-height: 50px;
+  color: #fff;
+  margin: 0 auto;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  border: none;
 }
