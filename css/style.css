@@ -307,6 +307,7 @@ body::-webkit-scrollbar-track:active {
   overflow: hidden;
   background: none;
   text-decoration: none;
+  letter-spacing: 0.2rem;
   border: none;
   padding: 0;
   cursor: pointer; }
@@ -507,8 +508,8 @@ video {
   justify-content: center; }
   @media screen and (max-width: 992px) {
     .video-wrapper {
-      height: 50vh;
-      top: 180px; } }
+      height: 60vh;
+      top: 12%; } }
   @media screen and (max-width: 576px) {
     .video-wrapper {
       height: 340px;
@@ -516,13 +517,17 @@ video {
 
 .season-quote {
   position: absolute;
-  top: 230px;
+  top: 40%;
   z-index: 9;
   text-align: center;
   text-transform: uppercase; }
+  @media screen and (max-width: 992px) {
+    .season-quote {
+      top: -16%;
+      padding: 0 20px; } }
   @media screen and (max-width: 576px) {
     .season-quote {
-      top: -80px;
+      top: -1%;
       padding: 0 20px;
       font-size: 1.6rem !important; } }
 
@@ -690,12 +695,12 @@ video {
 
 @media screen and (max-width: 992px) {
   .contact-titulo {
-    margin-top: 450px !important;
+    margin-top: 70%;
     text-align: center;
     font-size: 3rem; } }
   @media screen and (max-width: 992px) and (max-width: 576px) {
     .contact-titulo {
-      margin-top: 230px !important;
+      margin-top: 50%;
       text-align: center;
       font-size: 2rem; } }
 

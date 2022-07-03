@@ -14,7 +14,7 @@
   border: none;
   @include borderRadius(0);
   &:hover {
-    color: #ba1818;
+    color: $color-red;
     &:after {
       width: 100%;
     }
@@ -26,7 +26,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    color: #ba1818;
+    color: $color-red;
     background: #fff;
     transition: all 0.35s;
   }

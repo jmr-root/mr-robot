@@ -17,8 +17,8 @@ video {
   align-items: center;
   justify-content: center;
   @include respond-to(tablet) {
-    height: 50vh;
-    top: 180px;
+    height: 60vh;
+    top: 12%;
   }
   @include respond-to(mobile) {
     height: 340px;
@@ -28,12 +28,16 @@ video {
 
 .season-quote {
   position: absolute;
-  top: 230px;
+  top: 40%;
   z-index: 9;
   text-align: center;
   text-transform: uppercase;
+  @include respond-to(tablet) {
+    top: -16%;
+    padding: 0 20px;
+  }
   @include respond-to(mobile) {
-    top: -80px;
+    top: -1%;
     padding: 0 20px;
     font-size: 1.6rem !important;
   }
